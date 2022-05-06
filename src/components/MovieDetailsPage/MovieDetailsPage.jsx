@@ -17,7 +17,7 @@ export default function MovieDetailsPage() {
         <>
             {movie && (
                 <>
-                    <Link to={location?.state?.from ?? '/home'}>
+                    <Link to={location?.state?.from ?? '/'}>
                     Go back
                     </Link>
 
@@ -46,7 +46,7 @@ export default function MovieDetailsPage() {
                         <li>
                             <NavLink
                                 to={`/movies/${movie.id}/cast/`}
-                                state={{ from: location?.state?.from ?? '/home' }}
+                                state={{ from: location?.state?.from ?? '/' }}
                             >
                                 Cast
                             </NavLink>
@@ -54,7 +54,7 @@ export default function MovieDetailsPage() {
                         <li>
                             <NavLink
                                 to={`/movies/${movie.id}/reviews/`}
-                                state={{ from: location?.state?.from ?? '/home' }}
+                                state={{ from: location?.state?.from ?? '/' }}
                             >
                                 
                                 Reviews

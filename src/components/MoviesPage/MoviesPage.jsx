@@ -43,7 +43,7 @@ export default function MoviesPage() {
                         <li key={movie.id}>
                             <Link
                                 to={`/movies/${movie.id}`}
-                                state={{ from: location ?? `/home` }}
+                                state={{ from: location ?? `/` }}
                             >
                                 {movie.title}
                             </Link>
